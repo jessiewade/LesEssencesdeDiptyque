@@ -5,9 +5,7 @@ window.addEventListener('load', function () {
   loadingScreen.style.display = 'none';
 });
 
-netlify({
-    imageCDN: false,
-  }),
+
 
 
 // Slideshow carousel
@@ -129,3 +127,8 @@ const filterCards = function (e) {
 filterButtons.forEach(function (button) {
   button.addEventListener("click", filterCards);
 });
+
+
+netlify({
+    imageCDN: false,
+  }),
