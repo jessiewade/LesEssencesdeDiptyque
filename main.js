@@ -1,3 +1,7 @@
+adapter: netlify({
+    imageCDN: false,
+  }),
+
 /* Loading screen */
 var loadingScreen = document.querySelector("#loadingScreen");
 
