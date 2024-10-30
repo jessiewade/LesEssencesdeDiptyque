@@ -128,5 +128,3 @@ filterButtons.forEach(function (button) {
   button.addEventListener("click", filterCards);
 });
 
-imageCDN: true,
-
