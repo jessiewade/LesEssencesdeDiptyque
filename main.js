@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
   loadingScreen.style.display = 'none';
 });
 
-adapter: netlify({
+netlify({
     imageCDN: false,
   }),
 
