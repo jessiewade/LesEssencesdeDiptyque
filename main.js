@@ -130,5 +130,5 @@ filterButtons.forEach(function (button) {
 
 
 netlify({
-    imageCDN: false,
+    imageCDN: true,
   }),
