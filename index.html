@@ -1,0 +1,409 @@
+<!-- set up -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&family=Noto+Sans+Kannada:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/light.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+    
+    <title>Les Essences De Diptyque</title>
+</head>
+
+<!-- Loading screen -->
+<div id="loadingScreen">
+
+<!-- SVG animation-->
+<svg class="loader">
+  <circle fill="#38785A" cx="6" cy="50" r="6">
+    <animate
+      attributeName="opacity"
+      dur="1s"
+      values="0;1;0"
+      repeatCount="indefinite"
+      begin="0.1"/>    
+  </circle>
+  <circle fill="#38785A" cx="26" cy="50" r="6">
+    <animate
+      attributeName="opacity"
+      dur="1s"
+      values="0;1;0"
+      repeatCount="indefinite" 
+      begin="0.2"/>       
+  </circle>
+  <circle fill="#38785A" cx="46" cy="50" r="6">
+    <animate
+      attributeName="opacity"
+      dur="1s"
+      values="0;1;0"
+      repeatCount="indefinite" 
+      begin="0.3"/>     
+  </circle>
+</svg>
+</div>
+
+
+
+<div id="screen-2">
+<!-- Slideshow carousel -->
+
+<div class="slideshow-container" id="mySlideshow">
+
+
+  <div class="mySlides fade">
+    <img src="Images/lilypad-image.png" alt="lilypad-carousel" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/coral-image.png" alt="coral-carousel" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/rose-image.png" alt="rose-carousel" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/moon-image.png" alt="moon-carousel" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/wood-image.png" alt="wood-carousel" style="width:100%">
+  </div>
+
+<!-- Dots for slideshow carousel -->
+  <div style="text-align:center">
+    <span class="dot current-slide-btn" data-slide-index="1"></span>
+    <span class="dot current-slide-btn" data-slide-index="2"></span>
+    <span class="dot current-slide-btn" data-slide-index="3"></span>
+    <span class="dot current-slide-btn" data-slide-index="4"></span>
+    <span class="dot current-slide-btn" data-slide-index="5"></span>
+  </div>
+
+</div>
+</div>
+
+<!-- Logo -->
+<div class="animated-element">
+<div class="logo" id="mylogo">
+  <img src="Images/logo.png" alt="logo-top" style="width: 80%;">
+</div>
+
+<!-- Headers -->
+<div class="hoverhome">
+  <a class="home" href="#mySlideshow">Home</a>
+</div>
+
+<div class="hoverabout">
+  <a class="about" href="#break1">About</a>
+</div>
+
+<div class="hoverscents">
+  <a class="scents" href="#wrapper">Scents</a>
+</div>
+
+<div class="hovercraftmanship">
+  <a class="craftmanship" href="#break2">Craftmanship</a>
+</div>
+</div>
+
+
+
+
+<!-- About page -->
+<div class="scrollTriggerFade section 1">
+<h1 id="break1">.</h1>
+
+<h2 id="subtitle">Discover Diptyque's new collection</h2> 
+<p id="title1">Les Essences De diptyque</p>
+</div>
+
+<div class="scrollTriggerFade section 2">
+<!-- Image static 1 -->
+ <div>
+  <img class="staticimage1" src="Images/static-image-1.png" alt="staticimage1">
+ </div>
+<!-- Paragraph -->
+<div class="paragraph1">
+  <h1>Bringing us back to nature, Diptyque’s new collection of perfumes uses the scents of Mother Earth to spark our imagination and fuel our inner creativity. The perfumes not only incites our scent, but allows us to sense, feel and bring us back to nature. The collection, meaning ‘The essences of Diptyque’ include five different perfumes, all incredibly different to suit each and every person. Lilyphéa, the poetry of plants, carries the scent of water Lillies. Rose Roche, shaped by the wings, carries the scent of the desert rose. Lunamaris, the reflection of moonlit water, carries the scent of the Mother of pearl. Coral Oscar, an unexpected contrast, carries the scent of coral. And lastly, Bois Corsé, a vital protective mantle, carries the scent of bark. These perfumes are the five treasures of nature.</h1>
+ </div>
+<!-- Image static 2 -->
+<div>
+  <img class="staticimage2" src="Images/static-image-2.png" alt="staticimage2">
+ </div>
+</div>
+
+<!-- Scents page -->
+<div class="scrollTriggerFade section 3">
+<h1 class="filtertext">Click a perfume to filter:</h1>
+</div>
+
+<div class="scrollTriggerFade section 4">
+<!-- Expanding 5 perfumes row -->
+<div id="wrapper">
+  <div class="hoverl">
+  <img id="lilypad" src="Images/lilypad-perfume.png" alt="Lilypad" style="width:80%">
+  </div>
+
+  <div class="hoverr">
+    <img id="rose" src="Images/rose-perfume.png" alt="Rose" style="width:80%">
+  </div>
+
+  <div class="hoverm">
+    <img id="moon" src="Images/moon-perfume.png" alt="Moon" style="width:80%">
+  </div>
+
+  <div class="hoverc">
+    <img id="coral" src="Images/coral-perfume.png" alt="Coral" style="width:80%">
+  </div>
+
+  <div class="hoverw">
+    <img id="wood" src="Images/wood-perfume.png" alt="Wood" style="width:80%">
+  </div>
+</div>
+</div>
+
+<div class="container3">
+<!-- Images Filter Buttons Section -->
+  <div class="row mt-5" id="filter-buttons">
+    <div class="col-12">
+    
+      <button id="lbtn" class="btn mb-2 me-1 active" data-filter="lilypad1 All">L</button>
+      <button id="rbtn" class="btn mb-2 me-1" data-filter="rose2 All">R</button>
+      <button id="mbtn" class="btn mb-2 me-1" data-filter="moon3 All">M</button>
+      <button id="cbtn" class="btn mb-2 me-1" data-filter="coral4 All">C</button>
+      <button id="wbtn" class="btn mb-2 me-1" data-filter="wood5 All">W</button>
+    </div>
+  </div>
+
+<!-- Filterable Images Section -->
+ <!-- Lilypad card -->
+  <div class="row px-2 mt-4 gap-3" id="filterable-cards">
+    <div class="card p-0" data-name="lilypad1 All">
+      <img class="lbox1" src="Images/lilypad-box.jpg" alt="img">
+      <div class="card-body">
+        <img class="lpackaging" src="Images/lilypad-packaging.png" alt="lpackaging">
+        <img class="lbottle" src="Images/lilypad-shadow.png" alt="lbottle">
+        <h1 class="ltitle">Lilyphéa</h1>
+  <p class="lsubtitle">Eau de parfum</p>
+  <p class="lpara">Lilyphéa represents the vision of the water lily. With fresh notes of cardamom, subtle accords of violet leaves and a blend of sweet vanilla, Lilyphéa is created to perfectly capture the scent of the plant world. The name Lilyphéa, combines the French word “water lily” and “Nymphéas”, from the title of Claude Monet’s Water Lillies series.</p>
+      </div>
+    </div>
+<!-- Rose card -->
+    <div class="card p-0" data-name="rose2 All">
+      <img class="rbox1" src="Images/rose-box.jpg" alt="img">
+      <div class="card-body">
+        <img class="rpackaging" src="Images/rose-packaging.png" alt="rpackaging">
+        <img class="rbottle" src="Images/rose-shadow.png" alt="rbottle" style="opacity: 90%;">
+        <h1 class="rtitle">Rose Roche</h1>
+  <p class="rsubtitle">Eau de parfum</p>
+  <p class="rpara">Rose Roche represents the vision of the desert rose. With fragrant notes of centifolia rose, subtle accords of lemon and a pinch of patchouli, Rose Roche is created to perfectly create the scent of the desert rose. The name Rose Roche plays on the words vegetable (Delicate) and the mineral (eternal).</p>
+      </div>
+    </div>
+<!-- Moon card -->
+    <div class="card p-0" data-name="moon3 All">
+      <img class="mbox1" src="Images/moon-box.jpg" alt="img">
+      <div class="card-body">
+        <img class="mpackaging" src="Images/moon-packaging.png" alt="mpackaging">
+        <img class="mbottle" src="Images/moon-shadow.png" alt="mbottle" style="opacity: 90%;">
+        <h1 class="mtitle">Lunamaris</h1>
+  <p class="msubtitle">Eau de parfum</p>
+  <p class="mpara">Lunamaris represents the vision of mother of pearl, and the moon reflecting off of the ocean water. With vibrant notes of pink peppercorn, subtle accords of incense, and amber rockrose, Lunamaris is created to perfectly capture the scent of mother of pearl. The name Lunamaris evokes the iridescence of the mother of pearl.</p>
+      </div>
+    </div>
+<!-- Coral card -->
+    <div class="card p-0" data-name="coral4 All">
+      <img class="cbox1" src="Images/coral-box.jpg" alt="img">
+      <div class="card-body">
+        <img class="cpackaging" src="Images/coral-packaging.png" alt="cpackaging">
+        <img class="cbottle" src="Images/coral-shadow.png" alt="cbottle">
+        <h1 class="ctitle">Coral Oscuro</h1>
+  <p class="csubtitle">Eau de parfum</p>
+  <p class="cpara">Corail Oscuro represents the vision of the ocean’s coral. With strong notes of mandarin, warm accords of rose bourbon, and salty mineral accords, Corail Oscuro is created to perfectly capture the scent of coral. The name Corail Oscuro, plays on the words of the fiery red coral and the darkness of the sea bed.</p>
+      </div>
+    </div>
+<!-- Wood card -->
+    <div class="card p-0" data-name="wood5 All">
+      <img class="wbox1" src="Images/wood-box.jpg" alt="img">
+      <div class="card-body">
+        <img class="wpackaging" src="Images/wood-packaging.png" alt="wpackaging">
+        <img class="wbottle" src="Images/wood-shadow.png" alt="wbottle" style="opacity: 90%;">
+        <h1 class="wtitle">Bois Corsé</h1>
+  <p class="wsubtitle">Eau de parfum</p>
+  <p class="wpara">Bois Corsé represents the vision of the tree bark. With strong notes of tonka bean, subtle accords of café arabica and a blend of sandalwood, Bois Corsé is created to perfectly capture the scent of tree bark. The name Bois Corsé plays on the French word “écorce”, meaning “bark”, and “corsé” meaning “full-bodied”.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h1 id="break2">.</h1>
+<div class="scrollTriggerFade section 4">
+<!-- Automatic video -->
+<sl-icon class="volume-mute" name="volume-mute" id="volume-mute"></sl-icon>
+<sl-icon class="volume-down" name="volume-down" id="volume-down"></sl-icon>
+<div class="row2">
+<video autoplay loop id="video">
+  <source src="Images/Looping-video.mp4" type="video/mp4">
+</video>
+
+
+
+<!-- Title 2 -->
+<div class="title2">
+  <h1>Reconnecting with nature</h1>
+ </div>
+</div>
+
+<!-- Paragraph 2 -->
+<div class="paragraph2">
+  <h1>Diptyque cannot simply reconnect us to our Mother Earth just through the scents of this collection, but also through sustainable practices. Through developing these captivating scents, depicting the 5 wonders of nature, we have exceeded European regulatory standards, the strictest in the world and have worked hard to create sustainable and safe perfumes that use raw and recycable materials, that truly give back to our Earth. This is the only way you can truly reconnect with nature through a perfume.
+  </h1>
+ </div>
+</div>
+
+<div class="scrollTriggerFade section 5">
+<!-- Title 3 -->
+<div class="title3">
+  <h1>Crafted with elegance</h1>
+ </div>
+</div>
+
+<div class="scrollTriggerFade section 6">
+<!-- Shoelace carousel slideshow -->
+<sl-carousel class="carousel-slideshow2" loop navigation pagination slides-per-page="2" slides-per-move="2">
+
+<sl-carousel-item class="lilypad-para">
+  <h1 class="shoelace-paral">Nathalie Cetto, a world renowned perfumer, created these wonderous scents, which are heavily inspired by nature to feed our creativity.</h1>
+</sl-carousel-item>
+
+<sl-carousel-item><img
+  class="lilypad-craftmanship"
+  alt="Lilypad craftmanship information"
+  src="Images/Lilypad-creator.png"
+></sl-carousel-item>
+
+<sl-carousel-item>
+  <h1 class="shoelace-parar">Collaborator Olivier Pescheux, worked on the initial scents and idea behind ‘Les Essences de Diptyque’ to create a collection that aligns with Diptyque’s values.</h1>
+</sl-carousel-item>
+
+<sl-carousel-item><img
+  class="rose-craftmanship"
+  alt="Rose craftmanship information"
+  src="Images/Rose-creator.png"
+></sl-carousel-item>
+
+<sl-carousel-item>
+  <h1 class="shoelace-param">Les Essences de Diptyque represents the five treasures of nature, showcasing their true beauty.</h1>
+</sl-carousel-item>
+
+<sl-carousel-item><img
+  class="moon-craftmanship"
+  alt="Moon craftmanship information"
+  src="Images/Moon-creator.png"
+></sl-carousel-item>
+
+<sl-carousel-item>
+  <h1 class="shoelace-parac">Nigel Peake, a highly respected drawing artist, created the beautiful perfume bottle and its packaging, allowing each scent to vividly come alive.</h1>
+</sl-carousel-item>
+
+<sl-carousel-item><img
+  class="coral-craftmanship"
+  alt="Coral craftmanship information"
+  src="Images/Coral-creator.png"
+></sl-carousel-item>
+
+<sl-carousel-item>
+  <h1 class="shoelace-paraw">These perfumes are inspired by nature in its rawest form to remind us and bring us back to what is really important. </h1>
+</sl-carousel-item>
+
+<sl-carousel-item><img
+  class="wood-craftmanship"
+  alt="Wood craftmanship information"
+  src="Images/Wood-creator.png"
+></sl-carousel-item>
+</sl-carousel>
+</div>
+
+<!-- Sign up bottom -->
+<h1 class="sign-up">Sign up to Diptyque's newletter: </h1>
+
+<!-- Text box from shoelace -->
+<div class="alert-toast">
+<sl-input rows="1" id="userEmail" placeholder="Enter your email" filled></sl-input>
+<sl-button class="enterButton" variant="success" id="myBtn1">Enter</sl-button>
+
+<!-- Alert from shoelace -->
+<sl-alert variant="success" duration="3000" closable>
+  <sl-icon slot="icon" name="check2-circle"></sl-icon>
+  <strong>You've successfully signed up!</strong><br>
+</sl-alert>
+</div>
+
+<!-- Logo bottom -->
+<div class="logo-bottom" id="mylogo-bottom">
+  <img src="Images/logo-bottom.png" alt="logo-bottom" style="width: 70%;">
+</div>
+
+<!-- Shoelace icons -->
+<sl-icon class="x" name="twitter-x"></sl-icon>
+<sl-icon class="instagram" name="instagram"></sl-icon>
+
+<!-- Handles -->
+<h1 class="diptyqueparis1">@diptyqueparis</h1>
+<h1 class="diptyqueparis2">@diptyqueparis</h1>
+
+<!-- Button from shoelace -->
+<sl-button id="home1" size="small" >Back to top </sl-button>
+
+
+<!-- Script links -->
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+
+
+
+<script>
+
+//gsap animation
+let tl = gsap.timeline({
+  onload: {
+    trigger: '.animated-element',
+    start: '35% 80%',
+    end: 'bottom 20%',
+    scrub: 1,
+    duration: 2,
+    markers: true
+    
+  }
+})
+
+  tl.to('.animated-element', {
+    y:60
+  })
+
+//gsap scrollTrigger
+var sections = gsap.utils.toArray('.section');
+
+sections.forEach((section) => {
+  
+  gsap.to(section, { autoAlpha: 0,
+    scrollTrigger: {
+        trigger: section,
+        start: 'top 2%',
+        scrub: 1,
+        end: 'bottom 10%',
+        markers: false
+    }
+
+});
+  
+})
+
+</script>
+</body>
+</html>

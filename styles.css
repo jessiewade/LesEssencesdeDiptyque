@@ -1,0 +1,2748 @@
+/* General */
+
+body {
+    margin: 0;
+  }
+
+html {  
+    scroll-behavior: smooth;  
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Kannadathin";
+  src: url(Fonts/NotoSansKannada-Thin.ttf);
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url(Fonts/JosefinSans-Light.ttf);
+}
+
+
+
+
+/* Loading screen */
+#loadingScreen {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(255, 255, 255);
+  z-index:  2;
+  opacity:  1;
+  transition: opacity 500ms ease;
+}
+
+/* SVG Loader */
+.loader {
+  margin-left: 700px;
+  margin-top: 350px;
+  display:inline-block;
+}
+
+
+
+
+/* Back to top button */
+#home1 {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 670px;
+  left: 675px;
+  z-index: 99;
+  cursor: pointer;
+  color: #73a884;
+  
+}
+
+sl-button#home1 {
+  /* Set design tokens for height and border width */
+  border-radius: 1px;
+  color: white;
+  font-size: 15px;
+  transition: 250ms transform ease, 250ms border ease;
+  margin-left: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 670px;
+  left: 675px;
+  z-index: 99;
+  cursor: pointer;
+  
+}
+
+sl-button#home1:hover {
+  transform: scale(1.05) ;
+}
+
+sl-button#home1:active {
+  transform: scale(1.05)  translateY(1px);
+}
+
+
+
+
+/* Slideshow carousel 1 */
+.slideshow-container {
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+
+/* Hide images by default */
+  .mySlides {
+    display: none;
+    position: absolute;
+  }
+
+/* Dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top: 700px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display:inline-block;
+    position:relative;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+/* Fading animation for slideshow */
+.fade {
+  animation-name: fade;
+  animation-duration: 8s;
+  background-color: black;
+}
+
+/* CSS animation */
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+  
+
+
+
+
+/* Top logo */
+.logo {
+  position:absolute;
+  margin-top: -860px;
+  margin-left: 574px;
+  margin-right: auto;
+  width: 400px;
+}
+
+/* headers */
+.home {
+  position:absolute;
+  margin-top: -740px;
+  margin-left: 110px;
+  color: #f1f1f1;
+  font-size: 25px;
+  font-family: "kannadathin";
+  text-decoration: none;
+  width: auto;
+  height: auto;
+}
+
+.about {
+  position:absolute;
+  margin-top: -740px;
+  margin-left: 370px;
+  color: #f1f1f1;
+  font-size: 25px;
+  font-family: "kannadathin";
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  }
+  
+.scents {
+  position:absolute;
+  margin-top: -740px;
+  margin-left: 1010px;
+  color: #f1f1f1;
+  font-size: 25px;
+  font-family: "kannadathin";
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  }
+
+.craftmanship {
+  position:absolute;
+  margin-top: -740px;
+  margin-left: 1220px;
+  color: #f1f1f1;
+  font-size: 25px;
+  font-family: "kannadathin";
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  }
+
+/* Hover over header */
+.hoverhome:hover {
+  opacity: 0.3;
+  width: auto;
+  height: auto;
+}
+
+.hoverabout:hover {
+  opacity: 0.3;
+  width: auto;
+  height: auto;
+}
+
+.hoverscents:hover {
+  opacity: 0.3;
+  width: auto;
+  height: auto;
+}
+
+.hovercraftmanship:hover {
+  opacity: 0.3;
+  width: 30px;
+  height: auto;
+}
+
+/* GSAP animation for header */
+.animated-element {
+  margin-top: -40px;
+}
+
+
+
+
+
+/* Page break */
+#break1 {
+  color: white;
+}
+
+#break2 {
+  color: white;
+}
+
+/* About page */
+#subtitle {
+  margin-left: 52px;
+  margin-top: 70px;
+  font-size: 20px;
+  font-family:'Kannadathin';
+}
+
+#title1 {
+  position: relative;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 130px;
+  font-size: 70px;
+  font-family:'JosefinSans';
+}
+
+.staticimage1 {
+  margin-left: 60px;
+  width: 450px;
+}
+
+.paragraph1 {
+  margin-left: 540px;
+  margin-top: -610px;
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 390px;
+  text-align: justify;
+  position: absolute;
+  margin-bottom: 30px;
+}
+
+.staticimage2 {
+  margin-left: 960px;
+  margin-top: -602px;
+  position: absolute;
+  width: 450px;
+}
+
+
+
+
+
+
+/* Click to text for perfume */
+.filtertext {
+  margin-left: 570px;
+  margin-top: 90px;
+  margin-bottom: -30px;
+  font-size: 32px;
+  font-family:'JosefinSans';
+}
+
+/* Perfume row */
+#lilypad {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+#rose {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+#moon {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+#coral {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+#wood {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+/* Perfume wrapper */
+#wrapper {
+  text-align: center;
+  display: flex;
+  width: 80%;
+  padding: 0px;
+  margin-top: 20px;
+  margin-left: 145px;
+  margin-bottom: 40px;
+}
+
+/* Invisible button on perfumes */
+#lbtn {
+  margin-top: -210px;
+  margin-left: 170px;
+  position: absolute;
+  font-size: 70px;
+  color: transparent;
+}
+
+#rbtn {
+  margin-top: -210px;
+  margin-left: 400px;
+  position: absolute;
+  font-size: 70px;
+  color: transparent;
+}
+
+#mbtn {
+  margin-top: -210px;
+  margin-left: 625px;
+  position: absolute;
+  font-size: 70px;
+  color: transparent;
+}
+
+#cbtn {
+  margin-top: -210px;
+  margin-left: 865px;
+  position: absolute;
+  font-size: 70px;
+  color: transparent;
+}
+
+#wbtn {
+  margin-top: -210px;
+  margin-left: 1092px;
+  position: absolute;
+  font-size: 70px;
+  color: transparent;
+}
+
+/* Invisible button settings on perfume row */
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+ 
+button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Times;
+  color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: 400ms ease-out;
+}
+ 
+button:hover,
+button.active {
+  background-color: transparent;
+}
+
+#filter-buttons button {
+  border-radius: 3px;
+}
+
+#filterable-cards .card {
+  width: 15rem;
+  border: 2px solid transparent;
+}
+#filterable-cards .card.hide {
+  display: none;
+}
+
+/* Different perfume background */
+.lbox1 {
+  width: 1430px;
+  margin-left: 20px;
+  height: 460px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.rbox1 {
+  width: 1430px;
+  margin-left: 20px;
+  height: 460px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.mbox1 {
+  width: 1430px;
+  margin-left: 20px;
+  height: 460px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.cbox1 {
+  width: 1430px;
+  margin-left: 20px;
+  height: 460px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.wbox1 {
+  width: 1430px;
+  margin-left: 20px;
+  height: 460px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+/* Different perfume titles */
+.ltitle {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -450px;
+  margin-bottom: 90px;
+  font-size: 60px;
+  color: white;
+  font-family:'JosefinSans';
+}
+
+.rtitle {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -450px;
+  margin-bottom: 90px;
+  font-size: 60px;
+  color: white;
+  font-family:'JosefinSans';
+}
+
+.mtitle {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -450px;
+  margin-bottom: 90px;
+  font-size: 60px;
+  color: white;
+  font-family:'JosefinSans';
+}
+
+.ctitle {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -450px;
+  margin-bottom: 90px;
+  font-size: 60px;
+  color: white;
+  font-family:'JosefinSans';
+}
+
+.wtitle {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -450px;
+  margin-bottom: 90px;
+  font-size: 60px;
+  color: white;
+  font-family:'JosefinSans';
+}
+
+/* Different perfume subtitles */
+.lsubtitle {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: -370px;
+  font-size: 20px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.rsubtitle {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: -370px;
+  font-size: 20px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.msubtitle {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: -370px;
+  font-size: 20px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.csubtitle {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: -370px;
+  font-size: 20px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.wsubtitle {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: -370px;
+  font-size: 20px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+/* Different perfume paragraphs */
+.lpara {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: -280px;
+  font-size: 20px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.rpara {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: -280px;
+  font-size: 20px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.mpara {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: -280px;
+  font-size: 20px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.cpara {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: -280px;
+  font-size: 20px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.wpara {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: -280px;
+  font-size: 20px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+/* Different perfume packaging images */
+.lpackaging {
+  position: absolute;
+  margin-top: -470px;
+  margin-left: 660px;
+  width: 300px;
+}
+
+.rpackaging {
+  position: absolute;
+  margin-top: -470px;
+  margin-left: 660px;
+  width: 300px;
+}
+
+.mpackaging {
+  position: absolute;
+  margin-top: -470px;
+  margin-left: 660px;
+  width: 300px;
+}
+
+.cpackaging {
+  position: absolute;
+  margin-top: -470px;
+  margin-left: 660px;
+  width: 300px;
+}
+
+.wpackaging {
+  position: absolute;
+  margin-top: -470px;
+  margin-left: 660px;
+  width: 300px;
+}
+
+/* Different perfume bottles with shadow */
+.lbottle {
+  position: absolute;
+  width: 450px;
+  margin-top: -535px;
+  margin-left: 970px;
+}
+
+.rbottle {
+  position: absolute;
+  width: 450px;
+  margin-top: -524px;
+  margin-left: 962px;
+}
+
+.mbottle {
+  position: absolute;
+  width: 450px;
+  margin-top: -523px;
+  margin-left: 965px;
+}
+
+.cbottle {
+  position: absolute;
+  width: 450px;
+  margin-top: -550px;
+  margin-left: 968px;
+  
+}
+
+.wbottle {
+  position: absolute;
+  width: 450px;
+  margin-top: -525px;
+  margin-left: 965px;
+}
+
+/* Different perfume paragraphs */
+.lilypad-para {
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 550px;
+  text-align: justify;
+}
+
+.rose-para {
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 550px;
+  text-align: justify;
+}
+
+.moon-para {
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 550px;
+  text-align: justify;
+}
+
+.coral-para {
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 550px;
+  text-align: justify;
+}
+
+.wood-para {
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 550px;
+  text-align: justify;
+}
+
+
+
+
+
+/* Video page */
+.row2 {
+  display: flex;
+}
+
+#video {
+  margin-top: -60px;
+  margin-left: -70px;
+  width: 90%;
+  height: 470px;
+}
+
+/* Buttons for video sound */
+.volume-mute {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 770px;
+  font-size: 40px;
+  color: white;
+}
+
+.volume-down {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 830px;
+  font-size: 40px;
+  color: white;
+}
+
+.title2 {
+  margin-left: -90px;
+  margin-top: -104px;
+  margin-bottom: 90px;
+  font-size: 32px;
+  font-family:'JosefinSans';
+}
+
+.paragraph2 {
+  position: absolute;
+  margin-left: 930px;
+  margin-top: -300px;
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+/* Last page */
+.title3 {
+  margin-left: 50px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  font-size: 32px;
+  font-family:'JosefinSans';
+}
+
+/* Shoelace paragraphs */
+.shoelace-paral {
+  font-size: 20px;
+  width: 400px;
+  font-family: "Kannadathin";
+  text-align: justify;
+}
+
+.shoelace-parar {
+  font-size: 20px;
+  width: 400px;
+  font-family: "Kannadathin";
+  text-align: justify;
+}
+
+.shoelace-param {
+  font-size: 20px;
+  width: 400px;
+  font-family: "Kannadathin";
+  text-align: justify;
+}
+
+.shoelace-parac {
+  font-size: 20px;
+  width: 400px;
+  font-family: "Kannadathin";
+  text-align: justify;
+}
+
+.shoelace-paraw {
+  font-size: 20px;
+  width: 400px;
+  font-family: "Kannadathin";
+  text-align: justify;
+}
+
+/* Shoelace Slideshow */
+.carousel-slideshow2 {
+  width: 1300px;
+  margin-left: 90px;
+}
+
+
+
+/* Sign up text */
+.sign-up {
+  margin-left: 56px;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-family:'JosefinSans';
+}
+
+/* Bottom logo */
+.logo-bottom {
+  position:absolute;
+  margin-top: -177px;
+  margin-left: 596px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  width: 400px;
+}
+
+/* X icon */
+.x {
+  position: absolute;
+  margin-top: -26px;
+  margin-left: 940px;
+  font-size: 25px;
+}
+
+/* Instagram icon */
+.instagram {
+  position: absolute;
+  margin-top: -26px;
+  margin-left: 1170px;
+  font-size: 25px;
+}
+
+/* X handle */
+.diptyqueparis1 {
+  position: absolute;
+  font-size: 20px;
+  font-family: "Kannadathin";
+  margin-top: -23px;
+  margin-left: 975px;
+}
+
+/* Instagram handle */
+.diptyqueparis2 {
+  position: absolute;
+  font-size: 20px;
+  font-family: "Kannadathin";
+  margin-top: -23px;
+  margin-left: 1209px;
+}
+
+/* User email textbox */
+#userEmail {
+  width: 380px;
+  margin-left: 55px;
+  margin-top: 30px;
+}
+
+.sl-toast-stack {
+  left: 5%;
+  right: 20%;
+  margin-top: 580px;
+}
+
+/* Enter email */
+sl-button.enterButton {
+  margin-top: -40px;
+  margin-left: 450px;
+  position: absolute;
+  width: 80px;
+  
+  background-color:#73a884;
+  color: white;
+  font-size: 1.125rem;
+  border-radius: 6px;
+  transition: 250ms transform ease, 250ms border ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+/* Loading screen */
+#loadingScreen {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(255, 255, 255);
+  z-index:  2;
+  opacity:  1;
+  transition: opacity 500ms ease;
+}
+
+/* SVG Loader */
+.loader {
+  margin-left: 480px;
+  margin-top: 320px;
+  display:inline-block;
+}
+
+
+
+
+/* Back to top button */
+#home1 {
+  display: none; 
+  position: fixed; 
+  z-index: 99;
+  cursor: pointer;
+}
+
+sl-button#home1 {
+  /* Set design tokens for height and border width */
+  border-radius: 1px;
+  color: white;
+  font-size: 15px;
+  transition: 250ms transform ease, 250ms border ease;
+  margin-top: -300px;
+  margin-left: -40px;
+  margin-right: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  left: 490px;
+  right: 450px;
+}
+
+sl-button#home1:hover {
+  transform: scale(1.05) ;
+}
+
+sl-button#home1:active {
+  transform: scale(1.05)  translateY(1px);
+}
+
+
+
+
+/* Slideshow carousel 1 */
+.slideshow-container {
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+
+/* Hide images by default */
+  .mySlides {
+    display: none;
+    position: absolute;
+    width: 1445px;
+    margin-left: -212px;
+  }
+
+/* Dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top: 700px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display:inline-block;
+    position:relative;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+/* Fading animation for slideshow */
+.fade {
+  animation-name: fade;
+  animation-duration: 8s;
+  background-color: black;
+}
+
+/* CSS animation */
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+  
+
+
+
+
+/* Top logo */
+.logo {
+  position:absolute;
+  margin-top: -860px;
+  margin-left: 348px;
+  margin-right: auto;
+  width: 400px;
+}
+
+/* headers */
+.home {
+  position:absolute;
+  margin-top: -740px;
+  margin-left: 50px;
+  color: #f1f1f1;
+  font-size: 22px;
+  font-family: "kannadathin";
+  text-decoration: none;
+  width: auto;
+  height: auto;
+}
+
+.about {
+  position:absolute;
+  margin-top: -740px;
+  margin-left: 246px;
+  color: #f1f1f1;
+  font-size: 22px;
+  font-family: "kannadathin";
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  }
+  
+.scents {
+  position:absolute;
+  margin-top: -740px;
+  margin-left: 715px;
+  color: #f1f1f1;
+  font-size: 22px;
+  font-family: "kannadathin";
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  }
+
+.craftmanship {
+  position:absolute;
+  margin-top: -740px;
+  margin-left: 850px;
+  color: #f1f1f1;
+  font-size: 22px;
+  font-family: "kannadathin";
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  }
+
+/* Hover over header */
+.hoverhome:hover {
+  opacity: 0.3;
+  width: auto;
+  height: auto;
+}
+
+.hoverabout:hover {
+  opacity: 0.3;
+  width: auto;
+  height: auto;
+}
+
+.hoverscents:hover {
+  opacity: 0.3;
+  width: auto;
+  height: auto;
+}
+
+.hovercraftmanship:hover {
+  opacity: 0.3;
+  width: 30px;
+  height: auto;
+}
+
+/* GSAP animation for header */
+.animated-element {
+  margin-top: -40px;
+}
+
+
+
+
+
+/* Page break */
+#break1 {
+  color: white;
+}
+
+#break2 {
+  color: white;
+}
+
+/* About page */
+#subtitle {
+  margin-left: 52px;
+  margin-top: 50px;
+  font-size: 15px;
+  font-family:'Kannadathin';
+}
+
+#title1 {
+  position: relative;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  font-family:'JosefinSans';
+}
+
+.staticimage1 {
+  margin-left: 50px;
+  position: absolute;
+  margin-top: 30px;
+  width: 320px;
+}
+
+.paragraph1 {
+  margin-left: 397px;
+  margin-top: 22px;
+  font-size: 6px;
+  font-family: "Kannadathin";
+  max-width: 230px;
+  text-align: justify;
+}
+
+.staticimage2 {
+  position: absolute;
+  margin-left: 660px;
+  margin-top: 30px;
+  width: 320px;
+}
+
+
+
+
+
+
+/* Click to text for perfume */
+.filtertext {
+  margin-left: 405px;
+  margin-top: 600px;
+  margin-bottom: -30px;
+  font-size: 20px;
+  font-family:'JosefinSans';
+}
+
+/* Perfume row */
+#lilypad {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+#rose {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+#moon {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+#coral {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+#wood {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+/* Perfume wrapper */
+#wrapper {
+  text-align: center;
+  display: flex;
+  width: 80%;
+  padding: 0px;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-bottom: 60px;
+}
+
+/* Invisible button on perfumes */
+#lbtn {
+  margin-top: -205px;
+  margin-left: 80px;
+  position: absolute;
+  font-size: 70px;
+  color: transparent;
+}
+
+#rbtn {
+  margin-top: -205px;
+  margin-left: 238px;
+  position: absolute;
+  font-size: 70px;
+  color: transparent;
+}
+
+#mbtn {
+  margin-top: -205px;
+  margin-left: 395px;
+  position: absolute;
+  font-size: 70px;
+  color: transparent;
+}
+
+#cbtn {
+  margin-top: -205px;
+  margin-left: 565px;
+  position: absolute;
+  font-size: 70px;
+  color: transparent;
+}
+
+#wbtn {
+  margin-top: -205px;
+  margin-left: 720px;
+  position: absolute;
+  font-size: 70px;
+  color: transparent;
+}
+
+/* Invisible button settings on perfume row */
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+ 
+button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Times;
+  color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: 400ms ease-out;
+}
+ 
+button:hover,
+button.active {
+  background-color: transparent;
+}
+
+#filter-buttons button {
+  border-radius: 3px;
+}
+
+#filterable-cards .card {
+  width: 15rem;
+  border: 2px solid transparent;
+}
+#filterable-cards .card.hide {
+  display: none;
+}
+
+/* Different perfume background */
+.lbox1 {
+  width: 982px;
+  margin-left: 20px;
+  height: 400px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.rbox1 {
+  width: 982px;
+  margin-left: 20px;
+  height: 400px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.mbox1 {
+  width: 982px;
+  margin-left: 20px;
+  height: 400px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.cbox1 {
+  width: 982px;
+  margin-left: 20px;
+  height: 400px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.wbox1 {
+  width: 982px;
+  margin-left: 20px;
+  height: 400px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+/* Different perfume titles */
+.ltitle {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: -400px;
+  margin-bottom: 90px;
+  font-size: 50px;
+  color: white;
+  font-family:'JosefinSans';
+}
+
+.rtitle {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: -400px;
+  margin-bottom: 90px;
+  font-size: 50px;
+  color: white;
+  font-family:'JosefinSans';
+}
+
+.mtitle {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: -400px;
+  margin-bottom: 90px;
+  font-size: 50px;
+  color: white;
+  font-family:'JosefinSans';
+}
+
+.ctitle {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: -400px;
+  margin-bottom: 90px;
+  font-size: 50px;
+  color: white;
+  font-family:'JosefinSans';
+}
+
+.wtitle {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: -400px;
+  margin-bottom: 90px;
+  font-size: 50px;
+  color: white;
+  font-family:'JosefinSans';
+}
+
+/* Different perfume subtitles */
+.lsubtitle {
+  position: absolute;
+  margin-left: 63px;
+  margin-top: -330px;
+  font-size: 15px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.rsubtitle {
+  position: absolute;
+  margin-left: 63px;
+  margin-top: -330px;
+  font-size: 15px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.msubtitle {
+  position: absolute;
+  margin-left: 63px;
+  margin-top: -330px;
+  font-size: 15px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.csubtitle {
+  position: absolute;
+  margin-left: 63px;
+  margin-top: -330px;
+  font-size: 15px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+.wsubtitle {
+  position: absolute;
+  margin-left: 63px;
+  margin-top: -330px;
+  font-size: 15px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 480px;
+  text-align: justify;
+}
+
+/* Different perfume paragraphs */
+.lpara {
+  position: absolute;
+  margin-left: 63px;
+  margin-top: -250px;
+  font-size: 15px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 280px;
+  text-align: justify;
+}
+
+.rpara {
+  position: absolute;
+  margin-left: 63px;
+  margin-top: -250px;
+  font-size: 15px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 280px;
+  text-align: justify;
+}
+
+.mpara {
+  position: absolute;
+  margin-left: 63px;
+  margin-top: -250px;
+  font-size: 15px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 280px;
+  text-align: justify;
+}
+
+.cpara {
+  position: absolute;
+  margin-left: 63px;
+  margin-top: -250px;
+  font-size: 15px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 280px;
+  text-align: justify;
+}
+
+.wpara {
+  position: absolute;
+  margin-left: 63px;
+  margin-top: -250px;
+  font-size: 15px;
+  color: white;
+  font-family: "Kannadathin";
+  max-width: 280px;
+  text-align: justify;
+}
+
+/* Different perfume packaging images */
+.lpackaging {
+  position: absolute;
+  margin-top: -390px;
+  margin-left: 420px;
+  width: 220px;
+}
+
+.rpackaging {
+  position: absolute;
+  margin-top: -390px;
+  margin-left: 420px;
+  width: 220px;
+}
+
+.mpackaging {
+  position: absolute;
+  margin-top: -390px;
+  margin-left: 420px;
+  width: 220px;
+}
+
+.cpackaging {
+  position: absolute;
+  margin-top: -390px;
+  margin-left: 420px;
+  width: 220px;
+}
+
+.wpackaging {
+  position: absolute;
+  margin-top: -390px;
+  margin-left: 420px;
+  width: 220px;
+}
+
+/* Different perfume bottles with shadow */
+.lbottle {
+  position: absolute;
+  width: 400px;
+  margin-top: -475px;
+  margin-left: 625px;
+}
+
+.rbottle {
+  position: absolute;
+  width: 400px;
+  margin-top: -460px;
+  margin-left: 620px;
+}
+
+.mbottle {
+  position: absolute;
+  width: 400px;
+  margin-top: -462px;
+  margin-left: 625px;
+}
+
+.cbottle {
+  position: absolute;
+  width: 400px;
+  margin-top: -480px;
+  margin-left: 630px;
+  
+}
+
+.wbottle {
+  position: absolute;
+  width: 400px;
+  margin-top: -460px;
+  margin-left: 625px;
+}
+
+/* Different perfume paragraphs */
+.lilypad-para {
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 550px;
+  text-align: justify;
+}
+
+.rose-para {
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 550px;
+  text-align: justify;
+}
+
+.moon-para {
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 550px;
+  text-align: justify;
+}
+
+.coral-para {
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 550px;
+  text-align: justify;
+}
+
+.wood-para {
+  font-size: 63%;
+  font-family: "Kannadathin";
+  max-width: 550px;
+  text-align: justify;
+}
+
+
+
+
+
+/* Video page */
+.row2 {
+  display: flex;
+}
+
+#video {
+  margin-top: -60px;
+  margin-left: -105px;
+  width: 100%;
+  height: 290px;
+}
+
+/* Buttons for video sound */
+.volume-mute {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 470px;
+  font-size: 35px;
+  color: white;
+}
+
+.volume-down {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 520px;
+  font-size: 35px;
+  color: white;
+}
+
+.title2 {
+  margin-left: -115px;
+  margin-top: -92px;
+  margin-bottom: 90px;
+  font-size: 23px;
+  font-family:'JosefinSans';
+}
+
+.paragraph2 {
+  position: absolute;
+  margin-left: 625px;
+  margin-top: -163px;
+  font-size: 37%;
+  font-family: "Kannadathin";
+  max-width: 350px;
+  text-align: justify;
+}
+
+/* Last page */
+.title3 {
+  margin-left: 55px;
+  margin-top: 80px;
+  margin-bottom: 90px;
+  font-size: 21px;
+  font-family:'JosefinSans';
+}
+
+/* Shoelace Slideshow */
+.carousel-slideshow2 {
+  width: 920px;
+  margin-left: 50px;
+}
+
+/* Shoelace paragraphs */
+.shoelace-paral {
+  font-size: 15px;
+  width: 350px;
+  font-family: "Kannadathin";
+  text-align: justify;
+}
+
+.shoelace-parar {
+  font-size: 15px;
+  width: 350px;
+  font-family: "Kannadathin";
+  text-align: justify;
+}
+
+.shoelace-param {
+  font-size: 15px;
+  width: 350px;
+  font-family: "Kannadathin";
+  text-align: justify;
+}
+
+.shoelace-parac {
+  font-size: 15px;
+  width: 350px;
+  font-family: "Kannadathin";
+  text-align: justify;
+}
+
+.shoelace-paraw {
+  font-size: 15px;
+  width: 350px;
+  font-family: "Kannadathin";
+  text-align: justify;
+}
+
+/* Sign up text */
+.sign-up {
+  margin-left: 60px;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-family:'JosefinSans';
+}
+
+/* Bottom logo */
+.logo-bottom {
+  position:absolute;
+  margin-top: -155px;
+  margin-left: 388px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  width: 350px;
+}
+
+/* X icon */
+.x {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 645px;
+  font-size: 20px;
+}
+
+/* Instagram icon */
+.instagram {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 825px;
+  font-size: 20px;
+}
+
+/* X handle */
+.diptyqueparis1 {
+  position: absolute;
+  font-size: 14px;
+  font-family: "Kannadathin";
+  margin-top: -18px;
+  margin-left: 675px;
+}
+
+/* Instagram handle */
+.diptyqueparis2 {
+  position: absolute;
+  font-size: 14px;
+  font-family: "Kannadathin";
+  margin-top: -18px;
+  margin-left: 855px;
+}
+
+/* User email textbox */
+#userEmail {
+  width: 200px;
+  margin-left: 55px;
+  margin-top: 20px;
+}
+
+.sl-toast-stack {
+  left: 5%;
+  right: 20%;
+  margin-top: 580px;
+}
+
+/* Enter email */
+sl-button.enterButton {
+  margin-top: -40px;
+  margin-left: 270px;
+  position: absolute;
+  width: 80px;
+  
+  background-color:#73a884;
+  color: white;
+  font-size: 1.125rem;
+  border-radius: 6px;
+  transition: 250ms transform ease, 250ms border ease;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* Loading screen */
+  #loadingScreen {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(255, 255, 255);
+    z-index:  2;
+    opacity:  1;
+    transition: opacity 500ms ease;
+  }
+  
+  /* SVG Loader */
+  .loader {
+    margin-left: 185px;
+    margin-top: 320px;
+    display:inline-block;
+  }
+  
+  
+  
+  
+  /* Back to top button */
+  #home1 {
+    display: none; 
+    position: fixed; 
+    z-index: 99;
+    cursor: pointer;
+  }
+  
+  sl-button#home1 {
+    /* Set design tokens for height and border width */
+    border-radius: 1px;
+    color: white;
+    font-size: 15px;
+    transition: 250ms transform ease, 250ms border ease;
+    margin-top: -300px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 160px;
+    right: 160px;
+  }
+  
+  sl-button#home1:hover {
+    transform: scale(1.05) ;
+  }
+  
+  sl-button#home1:active {
+    transform: scale(1.05)  translateY(1px);
+  }
+  
+  
+  
+  
+  /* Slideshow carousel 1 */
+  .slideshow-container {
+      
+      height: 768px;
+      background-size: cover;
+      background-position: center;
+      object-fit: cover;
+    }
+  
+  /* Hide images by default */
+    .mySlides {
+      display: none;
+      position: absolute;
+      width: 1445px;
+      margin-left: -510px;
+    }
+  
+  /* Dots */
+  .dot {
+      cursor: pointer;
+      height: 17px;
+      width: 17px;
+      margin-top: 700px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display:inline-block;
+      position:relative;
+      transition: background-color 0.6s ease;
+    }
+  
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+  
+  /* Fading animation for slideshow */
+  .fade {
+    animation-name: fade;
+    animation-duration: 8s;
+    background-color: black;
+  }
+  
+  /* CSS animation */
+  @keyframes fade {
+    from {opacity: .8}
+    to {opacity: 1}
+  }
+    
+  
+  
+  
+  
+  /* Top logo */
+  .logo {
+   margin-left: 110px;
+   margin-top: -750px;
+   position: absolute;
+   width: 250px;
+  }
+  
+  /* headers */
+  .home {
+    position:absolute;
+    margin-top: -751px;
+    margin-left: 30px;
+    color: #f1f1f1;
+    font-size: 17px;
+    font-family: "kannadathin";
+    text-decoration: none;
+    width: auto;
+    height: auto;
+  }
+  
+  .about {
+    position:absolute;
+    margin-top: -750px;
+    margin-left: 125px;
+    color: #f1f1f1;
+    font-size: 17px;
+    font-family: "kannadathin";
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    }
+    
+  .scents {
+    position:absolute;
+    margin-top: -750px;
+    margin-left: 220px;
+    color: #f1f1f1;
+    font-size: 17px;
+    font-family: "kannadathin";
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    }
+  
+  .craftmanship {
+    position:absolute;
+    margin-top: -750px;
+    margin-left: 310px;
+    color: #f1f1f1;
+    font-size: 17px;
+    font-family: "kannadathin";
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    }
+  
+  /* Hover over header */
+  .hoverhome:hover {
+    opacity: 0.3;
+    width: auto;
+    height: auto;
+  }
+  
+  .hoverabout:hover {
+    opacity: 0.3;
+    width: auto;
+    height: auto;
+  }
+  
+  .hoverscents:hover {
+    opacity: 0.3;
+    width: auto;
+    height: auto;
+  }
+  
+  .hovercraftmanship:hover {
+    opacity: 0.3;
+    width: 30px;
+    height: auto;
+  }
+  
+  /* GSAP animation for header */
+  .animated-element {
+    margin-top: -40px;
+  }
+  
+  
+  
+  
+  
+  /* Page break */
+  #break1 {
+    color: white;
+  }
+  
+  #break2 {
+    color: white;
+  }
+  
+  /* About page */
+  #subtitle {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family:'Kannadathin';
+  }
+  
+  #title1 {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family:'JosefinSans';
+  }
+  
+  .staticimage1 {
+    margin-left: 30px;
+    position: absolute;
+    margin-top: -10px;
+    width: 180px;
+  }
+  
+  .paragraph1 {
+    margin-left: 230px;
+    margin-top: -17px;
+    font-size: 6px;
+    font-family: "Kannadathin";
+    max-width: 180px;
+    text-align: justify;
+  }
+  
+  .staticimage2 {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 250px;
+    width: 180px;
+  }
+  
+  
+  
+  
+  
+  
+  /* Click to text for perfume */
+  .filtertext {
+    margin-left: 110px;
+    margin-top: 600px;
+    margin-bottom: -30px;
+    font-size: 20px;
+    font-family:'JosefinSans';
+  }
+  
+  /* Perfume row */
+  #lilypad {
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  #rose {
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  #moon {
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  #coral {
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  #wood {
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  /* Perfume wrapper */
+  #wrapper {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
+  
+  /* Invisible button on perfumes */
+  #lbtn {
+    margin-top: -135px;
+    margin-left: -2px;
+    position: absolute;
+    font-size: 30px;
+    color: transparent;
+  }
+  
+  #rbtn {
+    margin-top: -135px;
+    margin-left: 83px;
+    position: absolute;
+    font-size: 30px;
+    color: transparent;
+  }
+  
+  #mbtn {
+    margin-top: -135px;
+    margin-left: 165px;
+    position: absolute;
+    font-size: 30px;
+    color: transparent;
+  }
+  
+  #cbtn {
+    margin-top: -135px;
+    margin-left: 253px;
+    position: absolute;
+    font-size: 30px;
+    color: transparent;
+  }
+  
+  #wbtn {
+    margin-top: -135px;
+    margin-left: 336px;
+    position: absolute;
+    font-size: 30px;
+    color: transparent;
+  }
+  
+  /* Invisible button settings on perfume row */
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+   
+  button {
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Times;
+    color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: 400ms ease-out;
+  }
+   
+  button:hover,
+  button.active {
+    background-color: transparent;
+  }
+  
+  #filter-buttons button {
+    border-radius: 3px;
+  }
+  
+  #filterable-cards .card {
+    width: 15rem;
+    border: 2px solid transparent;
+  }
+  #filterable-cards .card.hide {
+    display: none;
+  }
+  
+  /* Different perfume background */
+  .lbox1 {
+    width: 460px;
+    clip-path: inset(80px 100px 10px 0);
+    margin-left: 35px;
+    height: 620px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+  
+  .rbox1 {
+    width: 460px;
+    clip-path: inset(80px 100px 10px 0);
+    margin-left: 35px;
+    height: 620px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+  
+  .mbox1 {
+    width: 460px;
+    clip-path: inset(80px 100px 10px 0);
+    margin-left: 35px;
+    height: 620px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+  
+  .cbox1 {
+    width: 460px;
+    clip-path: inset(80px 100px 10px 0);
+    margin-left: 35px;
+    height: 620px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+  
+  .wbox1 {
+    width: 460px;
+    clip-path: inset(80px 100px 10px 0);
+    margin-left: 35px;
+    height: 620px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+  
+  /* Different perfume titles */
+  .ltitle {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -550px;
+    margin-bottom: 90px;
+    font-size: 40px;
+    color: white;
+    font-family:'JosefinSans';
+  }
+  
+  .rtitle {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -550px;
+    margin-bottom: 90px;
+    font-size: 40px;
+    color: white;
+    font-family:'JosefinSans';
+  }
+  
+  .mtitle {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -550px;
+    margin-bottom: 90px;
+    font-size: 40px;
+    color: white;
+    font-family:'JosefinSans';
+  }
+  
+  .ctitle {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -550px;
+    margin-bottom: 90px;
+    font-size: 40px;
+    color: white;
+    font-family:'JosefinSans';
+  }
+  
+  .wtitle {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -550px;
+    margin-bottom: 90px;
+    font-size: 40px;
+    color: white;
+    font-family:'JosefinSans';
+  }
+  
+  /* Different perfume subtitles */
+  .lsubtitle {
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -500px;
+    font-size: 15px;
+    color: white;
+    font-family: "Kannadathin";
+    max-width: 480px;
+    text-align: justify;
+  }
+  
+  .rsubtitle {
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -500px;
+    font-size: 15px;
+    color: white;
+    font-family: "Kannadathin";
+    max-width: 480px;
+    text-align: justify;
+  }
+  
+  .msubtitle {
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -500px;
+    font-size: 15px;
+    color: white;
+    font-family: "Kannadathin";
+    max-width: 480px;
+    text-align: justify;
+  }
+  
+  .csubtitle {
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -500px;
+    font-size: 15px;
+    color: white;
+    font-family: "Kannadathin";
+    max-width: 480px;
+    text-align: justify;
+  }
+  
+  .wsubtitle {
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -500px;
+    font-size: 15px;
+    color: white;
+    font-family: "Kannadathin";
+    max-width: 480px;
+    text-align: justify;
+  }
+  
+  /* Different perfume paragraphs */
+  .lpara {
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -450px;
+    font-size: 15px;
+    color: white;
+    font-family: "Kannadathin";
+    max-width: 300px;
+    text-align: justify;
+  }
+  
+  .rpara {
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -450px;
+    font-size: 15px;
+    color: white;
+    font-family: "Kannadathin";
+    max-width: 300px;
+    text-align: justify;
+  }
+  
+  .mpara {
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -450px;
+    font-size: 15px;
+    color: white;
+    font-family: "Kannadathin";
+    max-width: 300px;
+    text-align: justify;
+  }
+  
+  .cpara {
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -450px;
+    font-size: 15px;
+    color: white;
+    font-family: "Kannadathin";
+    max-width: 300px;
+    text-align: justify;
+  }
+  
+  .wpara {
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -450px;
+    font-size: 15px;
+    color: white;
+    font-family: "Kannadathin";
+    max-width: 300px;
+    text-align: justify;
+  }
+  
+  /* Different perfume packaging images */
+  .lpackaging {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 80px;
+    width: 110px;
+  }
+  
+  .rpackaging {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 80px;
+    width: 110px;
+  }
+  
+  .mpackaging {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 80px;
+    width: 110px;
+  }
+  
+  .cpackaging {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 80px;
+    width: 110px;
+  }
+  
+  .wpackaging {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 80px;
+    width: 110px;
+  }
+  
+  /* Different perfume bottles with shadow */
+  .lbottle {
+    position: absolute;
+    width: 240px;
+    margin-top: -310px;
+    margin-left: 160px;
+  }
+  
+  .rbottle {
+    position: absolute;
+    width: 240px;
+    margin-top: -302px;
+    margin-left: 157px;
+  }
+  
+  .mbottle {
+    position: absolute;
+    width: 240px;
+    margin-top: -302px;
+    margin-left: 159px;
+  }
+  
+  .cbottle {
+    position: absolute;
+    width: 240px;
+    margin-top: -312px;
+    margin-left: 161px;
+    
+  }
+  
+  .wbottle {
+    position: absolute;
+    width: 240px;
+    margin-top: -299px;
+    margin-left: 159px;
+  }
+  
+  /* Different perfume paragraphs */
+  .lilypad-para {
+    font-size: 63%;
+    font-family: "Kannadathin";
+    max-width: 550px;
+    text-align: justify;
+  }
+  
+  .rose-para {
+    font-size: 63%;
+    font-family: "Kannadathin";
+    max-width: 550px;
+    text-align: justify;
+  }
+  
+  .moon-para {
+    font-size: 63%;
+    font-family: "Kannadathin";
+    max-width: 550px;
+    text-align: justify;
+  }
+  
+  .coral-para {
+    font-size: 63%;
+    font-family: "Kannadathin";
+    max-width: 550px;
+    text-align: justify;
+  }
+  
+  .wood-para {
+    font-size: 63%;
+    font-family: "Kannadathin";
+    max-width: 550px;
+    text-align: justify;
+  }
+  
+  
+  
+  
+  
+  /* Video page */
+  .row2 {
+    display: flex;
+  }
+  
+  #video {
+    margin-top: 0px;
+    margin-left: 40px;
+    width: 82%;
+    height: 290px;
+  }
+  
+  /* Buttons for video sound */
+  .volume-mute {
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 300px;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .volume-down {
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 350px;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .title2 {
+    margin-left: -353px;
+    margin-top: -92px;
+    margin-bottom: 90px;
+    font-size: 19px;
+    font-family:'JosefinSans';
+  }
+  
+  .paragraph2 {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -30px;
+    font-size: 37%;
+    font-family: "Kannadathin";
+    max-width: 350px;
+    text-align: justify;
+  }
+  
+  /* Last page */
+  .title3 {
+    margin-left: 40px;
+    margin-top: 200px;
+    margin-bottom: -40px;
+    font-size: 19px;
+    font-family:'JosefinSans';
+  }
+  
+  /* Shoelace Slideshow */
+  .carousel-slideshow2 {
+    width: 440px;
+    height: 500px;
+    margin-left: -4px;
+  }
+  
+  /* Shoelace paragraphs */
+  .shoelace-paral {
+    font-size: 15px;
+    width: 155px;
+    font-family: "Kannadathin";
+    text-align: left;
+  }
+  
+  .shoelace-parar {
+    font-size: 15px;
+    width: 155px;
+    font-family: "Kannadathin";
+    text-align: left;
+  }
+  
+  .shoelace-param {
+    font-size: 15px;
+    width: 155px;
+    font-family: "Kannadathin";
+    text-align: left;
+  }
+  
+  .shoelace-parac {
+    font-size: 15px;
+    width: 155px;
+    font-family: "Kannadathin";
+    text-align: left;
+  }
+  
+  .shoelace-paraw {
+    font-size: 15px;
+    width: 155px;
+    font-family: "Kannadathin";
+    text-align: left;
+  }
+
+  /* Sign up text */
+  .sign-up {
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    width: 300px;
+    font-family:'JosefinSans';
+  }
+  
+  /* Bottom logo */
+  .logo-bottom {
+    position:absolute;
+    margin-top: 0px;
+    margin-left: 153px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width: 180px;
+  }
+  
+  /* X icon */
+  .x {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 15px;
+    font-size: 15px;
+  }
+  
+  /* Instagram icon */
+  .instagram {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 285px;
+    font-size: 15px;
+  }
+  
+  /* X handle */
+  .diptyqueparis1 {
+    position: absolute;
+    font-size: 14px;
+    font-family: "Kannadathin";
+    margin-top: 50px;
+    margin-left: 38px;
+  }
+  
+  /* Instagram handle */
+  .diptyqueparis2 {
+    position: absolute;
+    font-size: 14px;
+    font-family: "Kannadathin";
+    margin-top: 50px;
+    margin-left: 307px;
+  }
+  
+  /* User email textbox */
+  #userEmail {
+    width: 240px;
+    margin-left: 45px;
+    margin-top: 20px;
+  }
+  
+  .sl-toast-stack {
+    left: 0%;
+    right: 18%;
+    margin-top: 580px;
+  }
+  
+  /* Enter email */
+  sl-button.enterButton {
+    margin-top: -40px;
+    margin-left: 310px;
+    position: absolute;
+    width: 80px;
+    
+    background-color:#73a884;
+    color: white;
+    font-size: 1.125rem;
+    border-radius: 6px;
+    transition: 250ms transform ease, 250ms border ease;
+  }
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
