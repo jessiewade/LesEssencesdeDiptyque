@@ -26,8 +26,8 @@ html {
 
 /* SVG Loader */
 .loader {
-  margin-left: 50px;
-  margin-top: -450px;
+  margin-left: 770px;
+  margin-top: -172px;
   position: absolute;
 }
 
@@ -938,9 +938,9 @@ sl-button.enterButton {
 
 /* SVG Loader */
 .loader {
-  margin-left: 480px;
-  margin-top: 320px;
-  display:inline-block;
+  margin-left: 665px;
+  margin-top: -88px;
+  position: absolute;
 }
 
 
@@ -1843,9 +1843,9 @@ sl-button.enterButton {
   
   /* SVG Loader */
   .loader {
-    margin-left: 185px;
-    margin-top: 320px;
-    display:inline-block;
+    margin-left: 215px;
+    margin-top: -86px;
+    position: absolute;
   }
   
   
