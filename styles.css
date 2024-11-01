@@ -26,8 +26,8 @@ html {
 
 /* SVG Loader */
 .loader {
-  margin-left: 100px;
-  margin-top: -500px;
+  margin-left: 50px;
+  margin-top: -450px;
   position: absolute;
 }
 
