@@ -28,7 +28,7 @@ html {
 .loader {
   margin-left: 700px;
   margin-top: 350px;
-  display:inline-block;
+  position: absolute;
 }
 
 
