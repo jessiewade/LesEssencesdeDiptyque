@@ -90,6 +90,34 @@
 
 <h2 id="subtitle">Discover Diptyque's new collection</h2> 
 <p id="title1">Les Essences De diptyque</p>
+
+<!-- SVG animation-->
+<svg class="loader">
+  <circle fill="#black" cx="3" cy="20" r="3">
+    <animate
+      attributeName="opacity"
+      dur="3s"
+      values="0;1;0"
+      repeatCount="indefinite"
+      begin="0.1"/>    
+  </circle>
+  <circle fill="#black" cx="22" cy="20" r="3">
+    <animate
+      attributeName="opacity"
+      dur="3s"
+      values="0;1;0"
+      repeatCount="indefinite" 
+      begin="0.4"/>       
+  </circle>
+  <circle fill="#black" cx="40" cy="20" r="3">
+    <animate
+      attributeName="opacity"
+      dur="3s"
+      values="0;1;0"
+      repeatCount="indefinite" 
+      begin="0.7"/>     
+  </circle>
+</svg>
 </div>
 
 <div class="scrollTriggerFade section 2">
@@ -306,36 +334,6 @@
 <div class="alert-toast">
 <sl-input rows="1" id="userEmail" placeholder="Enter your email" filled></sl-input>
 <sl-button class="enterButton" variant="success" id="myBtn1">Enter</sl-button>
-
-<!-- SVG animation-->
-<svg class="loader">
-  <circle fill="#38785A" cx="5" cy="40" r="5">
-    <animate
-      attributeName="opacity"
-      dur="2s"
-      values="0.5;1;0.5"
-      repeatCount="indefinite"
-      begin="0.1"/>    
-  </circle>
-  <circle fill="#38785A" cx="25" cy="40" r="5">
-    <animate
-      attributeName="opacity"
-      dur="2s"
-      values="0.5;1;0.5"
-      repeatCount="indefinite" 
-      begin="0.3"/>       
-  </circle>
-  <circle fill="#38785A" cx="45" cy="40" r="5">
-    <animate
-      attributeName="opacity"
-      dur="2s"
-      values="0.5;1;0.5"
-      repeatCount="indefinite" 
-      begin="0.5"/>     
-  </circle>
-</svg>
-</div>
-
 
 <!-- Alert from shoelace -->
 <sl-alert variant="success" duration="3000" closable>
